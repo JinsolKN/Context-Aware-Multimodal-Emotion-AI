@@ -1,0 +1,16 @@
+content_id,title,category,emotion_tags,energy,description,synthetic
+01,Relaxing Piano,music,sadness|neutral,low,Imaginary calm instrumental session,true
+02,Sunny Acoustic,music,joy|neutral,medium,Imaginary warm acoustic session,true
+03,Power Beats,music,anger|joy,high,Imaginary energetic rhythm session,true
+04,Quiet Rain,relaxation,fear|neutral,low,Imaginary gentle rain soundscape,true
+05,Evening Breathing,relaxation,anger|sadness,low,Imaginary slow breathing guide,true
+06,Soft Forest,relaxation,disgust|neutral,low,Imaginary forest soundscape,true
+07,Everyday Mixups,comedy,joy|surprise,medium,Imaginary light situational sketch,true
+08,Tiny Happy Moments,comedy,sadness|joy,low,Imaginary gentle humorous vignette,true
+09,Unexpected Guests,comedy,surprise|neutral,high,Imaginary lively comedy sketch,true
+10,One Small Step,motivation,fear|sadness,medium,Imaginary encouraging short talk,true
+11,Fresh Start,motivation,disgust|anger,high,Imaginary determined fresh-start talk,true
+12,Keep Going,motivation,joy|neutral,high,Imaginary upbeat progress reflection,true
+13,Letters Home,drama,sadness|neutral,low,Imaginary reflective family story,true
+14,The Missing Key,drama,fear|surprise,medium,Imaginary mild mystery scene,true
+15,A Difficult Choice,drama,anger|disgust,medium,Imaginary story about a disagreement,true

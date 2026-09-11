@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and model artifacts (never commit)
+data/
+!demo/data/
+!demo/data/demo_contents.csv
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+handoff_assets/
+
+# Generated experiment outputs
+experiments/
+outputs/
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
