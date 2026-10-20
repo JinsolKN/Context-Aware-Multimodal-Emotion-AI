@@ -16,6 +16,9 @@ import soundfile as sf
 import torch
 
 SRC_DIR = Path(__file__).resolve().parents[1] / "src"
+PROJECT_DIR = SRC_DIR.parent
+if str(PROJECT_DIR) not in sys.path:
+    sys.path.insert(0, str(PROJECT_DIR))
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
@@ -145,3 +148,11 @@ def predict(
         if acquired:
             request.app.state.predict_lock.release()
         audio.file.close()
+
+
+# Additive router: existing model loading, /predict and /health contracts stay intact.
+from rag.api import create_router
+app.include_router(create_router(app, predict))
+
+from rag.agent_api import create_agent_router
+app.include_router(create_agent_router(app, predict))

@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 .venv/
 .env
+.env.*
+!.env.example
+.venv-*/
+.pytest_cache/
+rag_cache/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -20,7 +25,11 @@ handoff_assets/
 # Generated experiment outputs
 experiments/
 outputs/
+output/
 logs/
+docs/
+evaluation/
+.gitattributes
 
 # OS / editor
 .DS_Store

@@ -6,7 +6,10 @@ from urllib.parse import urlsplit
 
 import httpx
 
-from ranking import validate_probabilities
+if __package__:
+    from .ranking import validate_probabilities
+else:
+    from ranking import validate_probabilities
 
 API_URL = os.getenv("EMOTION_API_URL", "http://localhost:8000")
 MAX_AUDIO_BYTES = 10 * 1024 * 1024
